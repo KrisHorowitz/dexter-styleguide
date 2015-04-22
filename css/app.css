@@ -1,0 +1,337 @@
+html, body {font-family:  Verdana,Arial,sans-serif;}
+
+h1,h2,h3,h4, button {
+    font-family: 'league-gothic',Verdana,Arial,sans-serif;
+}
+
+.page-wrap {
+    padding: 20px;
+}
+
+.marginalize > div {
+    margin-top: 40px;
+}
+
+.marginalize > div:first-child {
+    margin-top: 0;
+}
+
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h2 span {
+    font-style: italic;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+button {
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 20px;
+    font-family: Verdana,Arial,sans-serif;
+}
+
+p.emph {
+    font-size: 32px;
+}
+
+p.subtitle {
+    font-size: 12px;
+}
+
+.left {
+    float: left;
+}
+
+/*USER TILE */
+
+.user-tile {
+    height: 60px;
+    width: 180px;
+    background: rgba(255, 255, 255, .08);
+}
+
+.user-tile p {
+    font-family: 'dejavu_sans_monobook';
+    font-size: 16px;
+    color: #cefff1;
+    text-align: center;
+    padding-top: 22px;
+}
+
+/* USER ATTRIBUTION */
+
+.user-attribution p {
+    font-size: 14px;
+}
+
+.user-attribution *,
+.user-attribution-img * {
+    font-family: 'dejavu_sans_monobold';
+}
+
+.user-attribution .subtitle,
+.user-attribution-img .subtitle {
+    font-size: 10px;
+    padding-top: 5px;
+}
+
+.user-attribution-img img {
+    margin-right: 5px;
+}
+
+.user-attribution p,
+.user-attribution-img p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/* BUTTONS */
+
+button {
+    color: #fff;
+    height: 50px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 3px 1px -2px #000;
+}
+
+/* THING BANNER
+- HOMEPAGE, ANON USER */
+
+.thing-banner {
+    width: 920px;
+    height: 60px;
+    border: 10px solid #dfe2e5;
+    background-image: url('../img/dexter_07.png'),
+    linear-gradient(to right, #f1f3f4 , #fff); /* Standard syntax */
+    background-image: url('../img/dexter_07.png'),
+    -webkit-linear-gradient(left, #f1f3f4, #fff); /* For Safari 5.1 to 6.0 */
+    background-image: url('../img/dexter_07.png'),
+    -o-linear-gradient(right, #f1f3f4, #fff); /* For Opera 11.1 to 12.0 */
+    background-image: url('../img/dexter_07.png'),
+    -moz-linear-gradient(right, #f1f3f4, #fff); /* For Firefox 3.6 to 15 */
+    background-position: right;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.thing-banner > .triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 14px solid transparent;
+    border-left: 10px solid #dfe2e5;
+    border-bottom: 14px solid transparent;
+    position: absolute;
+    top: 16px;
+}
+
+.thing-banner > h3 {
+    font-size: 24px;
+    margin: 18px 0 18px 12px;
+    letter-spacing: 1px;
+}
+
+/* DASHBOARD THING
+- LOGGED IN USER HOMEPAGE */
+
+.thing-dashboard {
+    height: 260px;
+    width: 280px;
+    border: 10px solid #dfe2e5;
+    position: relative;
+}
+
+/*optimize code when you get a chance - cut down on doubling up*/
+/*.thing-dashboard,
+.thing-dashboard-img*/
+
+.thing-dashboard h3 {
+    font-family: Verdana,Arial,sans-serif;
+    padding: 15px 20px 0 15px;
+    font-size: 24px;
+}
+
+.thing-dashboard .button {
+    height: 50px;
+    width: 280px;
+    position: absolute;
+    bottom: 0;
+}
+
+.thing-dashboard .button p {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.thing-dashboard .user-attribution-img {
+    position: relative;
+    bottom: -40px;
+}
+
+.thing-dashboard-img {
+    height: 280px;
+    width: 300px;
+    background: url('../img/thing-bg-notched-Amazon-1x.png');
+    position: relative;
+}
+
+.thing-dashboard-img h3 {
+    font-family: Verdana,Arial,sans-serif;
+    padding: 20px 20px 0 20px;
+}
+
+.thing-dashboard-img .button {
+    height: 50px;
+    width: 280px;
+    margin: 0 0 10px 10px;
+    position: absolute;
+    bottom: 0;
+}
+
+.thing-dashboard-img .half-button {
+    height: 50px;
+    width: 140px;
+    margin: 0 0 10px 10px;
+    position: absolute;
+    bottom: 0;
+}
+
+.half-button + .half-button {
+    margin: 0 0 10px 150px;
+}
+
+.thing-dashboard-img .button p,
+.thing-dashboard-img .half-button p {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.thing-dashboard-img .user-attribution-img {
+    position: relative;
+    bottom: -30px;
+    left: 10px;
+}
+
+.thing-dashboard-blank {
+    height: 260px;
+    width: 280px;
+    border: 10px solid #f4f5f6;
+    position: relative;
+    background-color: #f8f8f8;
+}
+.thing-dashboard-blank:hover {
+    height: 280px;
+    width: 300px;
+    border: none;
+    background: url('../img/thing-bg-1x.png');
+}
+
+/* AUTH BUTTONS */
+/* change to tile? */
+
+
+.auth-button {
+    height: 40px;
+    width: 140px;
+}
+
+.auth-button div{
+    height: 36px;
+    border-top: solid 2px #dfe2e5;
+    border-right: solid 2px #dfe2e5;
+    border-bottom: solid 2px #dfe2e5;
+}
+
+.auth-button div p {
+    font-family: 'dejavu_sans_monobold';
+    font-size: 12px;
+}
+
+.auth-button .auth {
+    text-align: center;
+    margin-top: 12px;
+}
+
+.auth-button .not-auth {
+    margin: 8px 0 8px 10px;
+    display: table-caption;
+}
+
+/* NAV BAR */
+
+.nav-bar {
+    height: 100px;
+    width: 100%;
+    max-width: 1200px;
+    background: url('../img/blue-cogs-thin-1x.jpg')
+}
+
+.nav-bar .logo{
+    float: left;
+    margin: 30px 50px 0 135px;
+}
+
+.nav-bar li {
+    display: block;
+    float: left;
+    margin-top: 40px;
+}
+
+.nav-bar a {
+    color: #fff;
+    font-size: 13px;
+    padding: 23.5px 45px;
+    background: #eee;
+    background: rgba(255, 255, 255, .08);
+}
+
+.nav-bar .user-tile {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.nav-bar .login-wrapper {
+    height: 60px;
+    width: 180px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background: rgba(255, 255, 255, .08);
+}
+
+.nav-bar .login {
+    height: 40px;
+    width: 160px;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 0;
+}
+
+.four-items a{
+    padding: 23.5px 22.5px;
+}
+
+.bar {
+    height: 10px;
+    width: 940px;
+    background: #cefff1;
+}
+
